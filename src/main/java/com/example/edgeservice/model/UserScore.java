@@ -25,3 +25,7 @@ public class UserScore {
         this.scoreNumber = scoreNumber;
     }
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
