@@ -2,8 +2,6 @@ package com.example.edgeservice.model;
 
 public class Car {
 
-    private int id;
-
     private String carBrand;
 
     private Integer maxSpeed;
@@ -11,6 +9,12 @@ public class Car {
     private Integer numberOfSeats;
 
     public Car() {
+    }
+
+    public Car(String carBrand, Integer maxSpeed, Integer numberOfSeats) {
+        this.carBrand = carBrand;
+        this.maxSpeed = maxSpeed;
+        this.numberOfSeats = numberOfSeats;
     }
 
     public String getCarBrand() {
