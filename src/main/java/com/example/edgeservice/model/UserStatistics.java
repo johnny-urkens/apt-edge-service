@@ -8,9 +8,6 @@ public class UserStatistics {
     private String carBrand;
     private List<UserScore> userScores;
 
-    public UserStatistics() {
-    }
-
     public UserStatistics(Car car, List<Scan> scans) {
         setCarBrand(car.getCarBrand());
         userScores = new ArrayList<>();
@@ -33,7 +30,7 @@ public class UserStatistics {
     }
 
     public void setCarBrand(String carBrand) {
-        this.carBrand = carBrand;
+        this.carBrand = carBrand.toLowerCase();
     }
 
     public List<UserScore> getUserScores() {
